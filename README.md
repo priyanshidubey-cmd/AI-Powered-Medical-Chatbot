@@ -39,7 +39,7 @@ medical-chatbot/
 
 Clone the repo
 
-git clone https://github.com/YOUR_USERNAME/medical-chatbot.git
+git clone https://github.com/priyanshidubey-cmd/AI-Powered-Medical-Chatbot
 cd medical-chatbot
 
 
