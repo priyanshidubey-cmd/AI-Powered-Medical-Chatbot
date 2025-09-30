@@ -1,20 +1,78 @@
-# README: Setting Up Your Environment with Pipenv
+🧠 Medical Chatbot with LLM Integration
 
-## Prerequisite: Install Pipenv
-Follow the official Pipenv installation guide to set up Pipenv on your system:  
-[Install Pipenv Documentation](https://pipenv.pypa.io/en/latest/installation.html)
+An AI-powered medical assistant chatbot designed to answer medical-related questions using advanced Large Language Models (LLMs). This project demonstrates how to build a domain-specific conversational AI using tools like LangChain, FAISS, and custom vector stores.
 
----
+🚀 Features
 
-## Steps to Set Up the Environment
+🔎 Semantic search on custom medical documents
 
-### Install Required Packages
-Run the following commands in your terminal (assuming Pipenv is already installed):
+🧠 Context-aware conversations powered by LLMs
 
-```bash
-pipenv install langchain langchain_community langchain_huggingface faiss-cpu pypdf
-pipenv install huggingface_hub
-pipenv install streamlit
+🗂️ FAISS-based vector store for efficient retrieval
+
+⚙️ Easily expandable with new datasets
+
+🧪 Educational prototype for digital health applications
+
+🛠️ Tech Stack
+
+Python 3.10+
+
+LangChain
+
+FAISS (Facebook AI Similarity Search)
+
+OpenAI API (or compatible LLM)
+
+📁 Project Structure
+medical-chatbot/
+├── data/                     # Medical documents for indexing
+├── vectorstore/db_faiss/    # Saved vector index
+├── medibot.py               # Main chatbot script
+├── create_memory_for_llm.py # Builds the vector store
+├── connect_memory_with_llm.py # Connects vector store to LLM
+├── requirements.txt
+├── Pipfile / Pipfile.lock
+└── README.md
+
+⚡ Quick Start
+
+Clone the repo
+
+git clone https://github.com/YOUR_USERNAME/medical-chatbot.git
+cd medical-chatbot
 
 
+Install dependencies
+Using pip:
 
+pip install -r requirements.txt
+
+
+Add your medical data
+Place your medical text files (e.g., .txt, .pdf) in the data/ folder.
+
+Build the vector memory
+
+python create_memory_for_llm.py
+
+
+Run the chatbot
+
+python medibot.py
+
+📌 Notes
+
+This project is intended for educational and research purposes only.
+
+It is not a substitute for professional medical advice or diagnosis.
+
+📝 License
+
+MIT License
+
+🙌 Acknowledgements
+
+Built using LangChain
+, FAISS
+, and inspired by open-source community work in healthcare AI.
